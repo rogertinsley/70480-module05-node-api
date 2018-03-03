@@ -11,7 +11,7 @@ before_install:
   - docker run -d rdtregistry.azurecr.io/mod05-api:$TRAVIS_COMMIT
 
   script:
-    - docker ps | grep -q sloppy
+    - docker ps | grep -q mod05-api
 
 notifications:
   email:
