@@ -12,5 +12,5 @@ notifications:
   email:
     recipients:
       - $EMAIL
-    on_success: never
+    on_success: always
     on_failure: always
