@@ -8,6 +8,10 @@ before_install:
   - docker tag mod05-api:$TRAVIS_COMMIT rdtregistry.azurecr.io/mod05-api:$TRAVIS_COMMIT
   - docker login $DOCKER_REGISTRY -u="$DOCKER_USERNAME" -p=$DOCKER_PASSWORD
   - docker push rdtregistry.azurecr.io/mod05-api:$TRAVIS_COMMIT
+  - docker run -d rdtregistry.azurecr.io/mod05-api:$TRAVIS_COMMIT
+
+  script:
+    - docker ps | grep -q sloppy
 
 notifications:
   email:
