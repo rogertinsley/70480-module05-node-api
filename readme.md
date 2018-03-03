@@ -2,6 +2,8 @@
 
 Demonstration API for Moduel 05 of Microsoft 70-480 course.
 
+![](https://travis-ci.org/rogertinsley/70480-module05-node-api.svg?branch=master)
+
 ### Build image and run a container
 
 ```
