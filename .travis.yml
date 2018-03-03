@@ -5,9 +5,9 @@ services:
 
 before_install:
   - docker build -t $DOCKER_IMAGE:$TRAVIS_COMMIT .
-  - docker tag mod05-api $DOCKER_IMAGE/mod05-api
+  - docker tag mod05-api rdtregistry.azurecr.io/mod05-api
   - docker login $DOCKER_REGISTRY -u="$DOCKER_USERNAME" -p=$DOCKER_PASSWORD
-  - docker push $DOCKER_IMAGE:$TRAVIS_COMMIT
+  - docker push rdtregistry.azurecr.io/mod05-api
 
 notifications:
   email:
