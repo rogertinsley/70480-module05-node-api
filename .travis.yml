@@ -6,7 +6,7 @@ services:
 before_install:
   - docker build -t mod05-api:$TRAVIS_BUILD_NUMBER .
   - docker tag mod05-api:$TRAVIS_BUILD_NUMBER rdtregistry.azurecr.io/mod05-api:$TRAVIS_BUILD_NUMBER
-  - docker login $DOCKER_REGISTRY -u="$DOCKER_USERNAME" -p=$DOCKER_PASSWORD
+  - docker login rdtregistry.azurecr.io -u="$DOCKER_USERNAME" -p=$DOCKER_PASSWORD
   - docker push rdtregistry.azurecr.io/mod05-api:$TRAVIS_BUILD_NUMBER
   - docker run -d rdtregistry.azurecr.io/mod05-api:$TRAVIS_BUILD_NUMBER
 
