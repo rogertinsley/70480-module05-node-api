@@ -12,6 +12,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^3.21.2"
   },
   "license": "ISC"

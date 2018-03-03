@@ -1,7 +1,9 @@
  var express = require('express'),
+        cors = require('cors'),
          app = express();
 
 app.use(express.bodyParser());
+app.use(cors());
 
 app.set('port', (process.env.PORT || 3000))
 
