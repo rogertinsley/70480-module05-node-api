@@ -17,7 +17,7 @@ Login to the registry:
 docker login rdtregistry.azurecr.io
 ```
 
-Push to the registry:
+Create an alias of the image and push to the registry:
 
 ```
 docker tag mod05-api rdtregistry.azurecr.io/mod05-api
