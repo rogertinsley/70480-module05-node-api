@@ -13,6 +13,7 @@ products.push({ id: 1, name: 'Apple' });
 products.push({ id: 2, name: 'Dell' });
 products.push({ id: 3, name: 'Lenovo' });
 products.push({ id: 4, name: 'HP' });
+products.push({ id: 5, name: 'ASUS' });
 
 app.get('/', function (req, res) {
     res.send('Product API is running on /api/products endpoint');
