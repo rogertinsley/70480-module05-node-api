@@ -1,6 +1,6 @@
 ## 70480-node-api
 
-Demonstration API for Moduel 05 of Microsoft 70-480 course.
+Demonstration API for Module 05 of Microsoft 70-480 course.
 
 [![Build Status](https://travis-ci.org/rogertinsley/70480-module05-node-api.svg?branch=master)](https://travis-ci.org/rogertinsley/70480-module05-node-api)
 
