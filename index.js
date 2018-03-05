@@ -17,6 +17,7 @@ products.push({ id: 5, name: 'ASUS' });
 products.push({ id: 6, name: 'Razer' });
 products.push({ id: 7, name: 'Samsung' });
 products.push({ id: 8, name: 'Microsoft' });
+products.push({ id: 9, name: 'Gateway2000' });
 
 app.get('/', function (req, res) {
     res.send('Product API is running on /api/products endpoint');
